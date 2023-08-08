@@ -1,0 +1,97 @@
+body {
+  background-color: #202020;
+  color: #f8f9f9;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --accent-color: #8400ff;
+
+  /* Skills colors */
+  --html-color: #e44d26;
+  --css-color: #1a5aa7;
+  --bootstrap-color: #614092;
+  --js-color: #d4b800;
+  --jquery-color: #0769ad;
+  --vuejs-color: #3FB984;
+  --php-color: #8892be;
+  --sql-color: #4479a1;
+  --windows-color: #1894ce;
+  --linux-color: #e5aa34;
+  --vscode-color: #1887d1;
+  --nano-color: #8518ce;
+  --commandline-color: #2b2b2b;
+  --git-color: #ea4e44;
+  --github-color: #161b22;
+  --wamp-color: #ce1885;
+  --paintnet-color: #7293c4;
+  --pencil-color: #f18d00;
+
+  /* Skills percentages */
+  --html-percentage: 80%;
+  --css-percentage: 80%;
+  --bootstrap-percentage: 70%;
+  --js-percentage: 50%;
+  --jquery-percentage: 50%;
+  --vuejs-percentage: 30%;
+  --php-percentage: 60%;
+  --sql-percentage: 50%;
+  --windows-percentage: 80%;
+  --linux-percentage: 70%;
+  --vscode-percentage: 70%;
+  --nano-percentage: 90%;
+  --commandline-percentage: 60%;
+  --git-percentage: 70%;
+  --github-percentage: 70%;
+  --wamp-percentage: 50%;
+  --paintnet-percentage: 80%;
+  --pencil-percentage: 70%;
+}
+
+
+#main-row {
+  max-width: 2000px;
+}
+
+a {
+  color: inherit;
+}
+
+h2 {
+  border-bottom: 1px solid var(--accent-color);
+  text-align: center;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+/* For xs and sm displays */
+@media (max-width: 767px) {
+
+  /* Removes the horizontal padding on the container and the row */
+  #main-container,
+  #main-row>* {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Adds a border-bottom on divs with an ID starting with 'block-' */
+  div[id^="block-"] {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  #block-experience {
+    border: 0;
+  }
+}
+
+/* For md and + displays */
+@media (min-width: 768px) {
+
+  /* Adds a full border on 'block-' divs */
+  div[id^="block-"] {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  }
+}
