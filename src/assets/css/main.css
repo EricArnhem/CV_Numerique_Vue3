@@ -64,24 +64,8 @@ h2 {
 /* For xs and sm displays */
 @media (max-width: 767px) {
 
-  /* Adds a border-bottom on divs with an ID starting with 'block-' */
-  div[id^="block-"] {
-    border-bottom: 1px solid #dee2e6;
-  }
-
   #block-experience {
     border: 0;
-  }
-
-}
-
-/* For md and + displays */
-@media (min-width: 768px) {
-
-  /* Adds a full border on 'block-' divs */
-  div[id^="block-"] {
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
   }
 
 }

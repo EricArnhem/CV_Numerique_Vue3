@@ -52,6 +52,22 @@ const currentYear = () => {
     padding-right: 0;
   }
 
+  /* Adds a border-bottom on divs with ID starting with 'block-' */
+  div[id^="block-"] {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+}
+
+/* For md and + displays */
+@media (min-width: 768px) {
+
+  /* Adds a full border on divs with ID starting with 'block-' */
+  div[id^="block-"] {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  }
+
 }
 
 footer {
