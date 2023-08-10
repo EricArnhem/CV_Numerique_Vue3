@@ -28,10 +28,11 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // add icons to the library
-library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faGithub)
+library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faChevronRight, faGithub)
 
 const app = createApp(App)
 

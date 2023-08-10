@@ -1,0 +1,86 @@
+{
+  "programmingLanguages": [
+    {
+      "HTML": {
+        "shortname": "html",
+        "percentage": 70
+      },
+      "CSS": {
+        "shortname": "css",
+        "percentage": 80,
+        "frameworks": {
+          "Bootstrap": {
+            "shortname": "bootstrap",
+            "percentage": 70
+          }
+        }
+      },
+      "JavaScript": {
+        "shortname": "js",
+        "percentage": 50,
+        "frameworks": {
+          "Vue.js": {
+            "shortname": "vuejs",
+            "percentage": 30
+          }
+        }
+      },
+      "PHP": {
+        "shortname": "php",
+        "percentage": 60
+      },
+      "SQL (MySQL)": {
+        "shortname": "sql",
+        "percentage": 50
+      }
+    }
+  ],
+  "operatingSystems": [
+    {
+      "Windows": {
+        "shortname": "windows",
+        "percentage": 80
+      },
+      "Linux": {
+        "shortname": "linux",
+        "percentage": 70
+      }
+    }
+  ],
+  "tools": [
+    {
+      "Visual Studio Code": {
+        "shortname": "vscode",
+        "percentage": 70
+      },
+      "Nano": {
+        "shortname": "nano",
+        "percentage": 90
+      },
+      "Ligne de commande": {
+        "shortname": "commandline",
+        "percentage": 60
+      },
+      "Git": {
+        "shortname": "git",
+        "percentage": 70
+      },
+      "GitHub": {
+        "shortname": "github",
+        "percentage": 70
+      },
+      "WAMP/LAMP": {
+        "shortname": "wamp",
+        "percentage": 50
+      },
+      "Paint.NET": {
+        "shortname": "paintnet",
+        "percentage": 80
+      },
+      "Pencil": {
+        "shortname": "pencil",
+        "percentage": 70
+      }
+    }
+  ]
+}

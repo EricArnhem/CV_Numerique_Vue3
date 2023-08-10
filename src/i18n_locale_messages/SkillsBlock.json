@@ -1,0 +1,30 @@
+{
+  "fr": {
+    "skills": {
+      "title": "Compétences",
+      "programmingLanguages": "Langages informatiques",
+      "tools": {
+        "title": "Outils",
+        "commandLine": "Ligne de commande"
+      },
+      "languages": {
+        "title": "Langues",
+        "english": "Anglais (Bon)"
+      }
+    }
+  },
+  "en": {
+    "skills": {
+      "title": "Skills",
+      "programmingLanguages": "Programming languages",
+      "tools": {
+        "title": "Tools",
+        "commandLine": "Command line"
+      },
+      "languages": {
+        "title": "Languages",
+        "english": "English (Good)"
+      }
+    }
+  }
+}
