@@ -1,5 +1,7 @@
 <script setup>
+import NavigationBar from '@/components/NavigationBar.vue';
 
+// -- Methods --
 const currentYear = () => {
   let date = new Date();
   return date.getFullYear();
@@ -8,7 +10,7 @@ const currentYear = () => {
 </script>
 
 <template>
-  <!-- <NavigationBar /> -->
+  <NavigationBar />
   <div id="main-container" class="container-fluid mt-md-5">
     <div id="main-row" class="row justify-content-center mx-auto">
 

@@ -1,0 +1,97 @@
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { t, locale } = useI18n();
+
+// -- Methods --
+const changeLocale = (newLocale) => {
+  locale.value = newLocale;
+};
+
+</script>
+
+<template>
+  <nav class="navbar sticky-top navbar-dark navbar-expand-sm navbar-custom">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 me-0 me-sm-3">Eric ARNHEM</span>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-content"
+        aria-controls="navbar-content"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav ms-auto mb-1 mb-sm-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="language-dropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <font-awesome-icon :icon="['fas', 'language']" id="language-icon"/> {{ t('language') }}
+            </a>
+            <ul
+              class="
+                dropdown-menu
+                dropdown-menu-end
+                dropdown-menu-dark
+                dropdown-menu-custom
+              "
+              aria-labelledby="language-dropdown"
+            >
+              <li><button class="dropdown-item" @click="changeLocale('fr')">Français</button></li>
+              <li><button class="dropdown-item" @click="changeLocale('en')">English</button></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<i18n src="@/i18n_locale_messages/NavigationBar.json"></i18n>
+
+<style>
+.navbar-custom {
+  background-image: url("@/assets/img/background.jpg");
+  border-bottom: 1px solid #f8f9f9;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  #navbar-content {
+    margin-top: 0.5rem;
+    border-top: 1px solid rgb(255, 255, 255, 40%);
+  }
+
+  .dropdown-menu-custom {
+    border: 0;
+    border-left: 2px solid rgb(255, 255, 255, 40%);
+    border-radius: 0;
+    background-color: rgb(255, 255, 255, 8%);
+  }
+}
+
+.dropdown-menu-custom .dropdown-item:active {
+  background-color: var(--accent-color) !important;
+}
+
+#language-icon {
+  font-size: 19px;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+</style>
