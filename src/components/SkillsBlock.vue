@@ -131,7 +131,7 @@ import skillsData from '@/assets/json/skillsData.json';
 }
 
 #skill-english {
-  list-style-image: url(../assets/img/logos/uk_flag.png);
+  list-style-image: url(@/assets/img/logos/uk_flag.png);
 }
 </style>
 
@@ -141,7 +141,7 @@ $skills: 'html', 'css', 'bootstrap', 'js', 'vuejs', 'php', 'sql', 'windows', 'li
 @each $skill in $skills {
 
   #skill-#{$skill} {
-    list-style-image: url(../assets/img/logos/#{$skill}.png);
+    list-style-image: url(@/assets/img/logos/#{$skill}.png);
   }
 
   #skill-#{$skill} .progress-bar {
