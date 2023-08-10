@@ -1,6 +1,7 @@
 <script setup>
 import NavigationBar from '@/components/NavigationBar.vue';
 import InfosBlock from '@/components/InfosBlock.vue';
+import DescriptionBlock from '@/components/DescriptionBlock.vue';
 
 // -- Methods --
 const currentYear = () => {
@@ -25,7 +26,7 @@ const currentYear = () => {
 
        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-6">
          
-        <!-- <DescriptionBlock /> -->
+        <DescriptionBlock />
          <!-- <TrainingBlock /> -->
          <!-- <ExperiencesBlock /> -->
       </div>
