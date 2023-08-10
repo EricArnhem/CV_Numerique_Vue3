@@ -1,0 +1,20 @@
+{
+  "fr": {
+    "hobbies": {
+      "title": "Centres d'intérêt",
+      "newTechnologies": "Nouvelles technologies",
+      "astronomy": "Astronomie",
+      "videoGames": "Jeux vidéos",
+      "itNews": "Veille informatique"
+    }
+  },
+  "en": {
+    "hobbies": {
+      "title": "Hobbies",
+      "newTechnologies": "New technologies",
+      "astronomy": "Astronomy",
+      "videoGames": "Video games",
+      "itNews": "IT News"
+    }
+  }
+}

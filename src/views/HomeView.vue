@@ -2,6 +2,7 @@
 import NavigationBar from '@/components/NavigationBar.vue';
 import InfosBlock from '@/components/InfosBlock.vue';
 import SkillsBlock from '@/components/SkillsBlock.vue';
+import HobbiesBlock from '@/components/HobbiesBlock.vue';
 import DescriptionBlock from '@/components/DescriptionBlock.vue';
 
 // -- Methods --
@@ -21,7 +22,7 @@ const currentYear = () => {
         
         <InfosBlock />
         <SkillsBlock />
-        <!-- <HobbiesBlock /> -->
+        <HobbiesBlock />
 
        </div>
 

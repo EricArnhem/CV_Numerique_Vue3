@@ -24,15 +24,23 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // import specific icons
+// Navbar
 import { faLanguage } from '@fortawesome/free-solid-svg-icons'
+// Infos
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+// Skills
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+// Hobbies
+import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { faGamepad } from '@fortawesome/free-solid-svg-icons'
+import { faDisplay } from '@fortawesome/free-solid-svg-icons'
 
 // add icons to the library
-library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faChevronRight, faGithub)
+library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faChevronRight, faGithub, faMicrochip, faRocket, faGamepad, faDisplay)
 
 const app = createApp(App)
 
