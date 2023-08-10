@@ -6,6 +6,13 @@ const { t, locale } = useI18n();
 // -- Methods --
 const changeLocale = (newLocale) => {
   locale.value = newLocale;
+  updatePageTitle(newLocale);
+};
+
+const updatePageTitle = (newLocale) => {
+  const titleKey = 'pageTitle'; // Translation key for page title
+  const pageTitle = t(titleKey, {}, newLocale); // Get the translated page title
+  document.title = pageTitle; // Update the page title
 };
 
 </script>
