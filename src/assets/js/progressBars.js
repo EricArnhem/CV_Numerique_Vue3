@@ -1,4 +1,6 @@
 // Function to load a progress bar
+import skillsShortnames from '@/assets/json/skillsShortnames';
+
 function loadProgressBar(skillId) {
 
   // Selects the progress bar wanted
@@ -71,32 +73,11 @@ docReady(function () {
   // Creates the intersection observer with the callback function and the options
   let observer = new IntersectionObserver(callback, options);
 
-  let skillsIds = [
-    '#skill-html',
-    '#skill-css',
-    '#skill-bootstrap',
-    '#skill-js',
-    '#skill-vuejs',
-    '#skill-php',
-    '#skill-sql',
-    '#skill-windows',
-    '#skill-linux',
-    '#skill-vscode',
-    '#skill-nano',
-    '#skill-vscode',
-    '#skill-commandline',
-    '#skill-git',
-    '#skill-github',
-    '#skill-wamp',
-    '#skill-paintnet',
-    '#skill-pencil'
-  ];
-
   // For each skill
-  skillsIds.forEach(skillId => {
+  skillsShortnames.forEach(shortname => {
 
     // Sets the skill's progress bar as a target of the observer
-    observer.observe(document.querySelector(skillId + '> .progress'));
+    observer.observe(document.querySelector(`#skill-${shortname} > .progress`));
 
   });
 
