@@ -25,9 +25,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 // import specific icons
 import { faLanguage } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // add icons to the library
-library.add(faLanguage)
+library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faGithub)
 
 const app = createApp(App)
 
