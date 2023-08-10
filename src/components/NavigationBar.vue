@@ -45,7 +45,7 @@ const updatePageTitle = (newLocale) => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <font-awesome-icon :icon="['fas', 'language']" id="language-icon"/> {{ t('language') }}
+              <font-awesome-icon :icon="['fas', 'language']" id="language-icon"/> {{ $t('language') }}
             </a>
             <ul
               class="
@@ -66,7 +66,7 @@ const updatePageTitle = (newLocale) => {
   </nav>
 </template>
 
-<i18n src="@/i18n_locale_messages/NavigationBar.json"></i18n>
+<i18n global src="@/i18n_locale_messages/NavigationBar.json"></i18n>
 
 <style>
 .navbar-custom {
