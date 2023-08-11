@@ -124,6 +124,7 @@ import skillsData from '@/assets/json/skillsData.json';
 .skill-list .progress {
   height: 20px;
   font-size: 1rem;
+  border-radius: 4px;
 }
 
 .progress-bar {
