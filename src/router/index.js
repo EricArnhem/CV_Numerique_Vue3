@@ -8,6 +8,10 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/:anything*', // Redirects to home page if any parameter is detected
+      redirect: '/'
     }
   ]
 })
