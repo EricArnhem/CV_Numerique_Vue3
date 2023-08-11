@@ -13,12 +13,14 @@ const toolsShortNames = {
 }
 
 // -- Methods --
-// Returns a custom class that will a colored underline if the tool provided exists in the array
-const toolClass = (tool) => {
+
+// Get a tool CSS color variable (used to apply the colored underline)
+const getToolColorVariable = (tool) => {
   if (toolsShortNames[tool]) {
-    return toolsShortNames[tool] + '-tool';
+    let toolShortname = toolsShortNames[tool];
+    return `--${toolShortname}-color`;
   }
-}
+};
 
 </script>
 
@@ -35,19 +37,29 @@ const toolClass = (tool) => {
 
           <!-- Displays each event from the experiences -->
           <li class="experience-event" v-for="(event, name) in $tm('experiences.events')" :key="name" :data-date="$rt(event.date)">
+
             <span class="experience-title" v-html="$rt(event.title)"></span>
+
             <ul class="experience-tools">
               <li>
                 <span class="fw-500">{{ $t('experiences.toolsTitle') }}: </span>
+                
                 <!-- Displays each tool used for the event -->
                 <span v-for="(tool, index) in event.tools" :key="name + tool">
-                  <!-- Adds a different class to each unique tool that adds a colored underline -->
-                  <span :class="toolClass($rt(tool))">{{ $rt(tool) }}</span>
+
+                  <span
+                    class="tool-underline"
+                    :style="{ '--tool-color': `var(${getToolColorVariable($rt(tool))})` }">
+                    {{ $rt(tool) }}
+                  </span>
+
                   <!-- Adds a comma after each tool except the last one -->
                   <span v-if="index != Object.keys(event.tools).length - 1">, </span>
+
                 </span>
               </li>
             </ul>
+
           </li>
 
         </ul>
@@ -134,31 +146,7 @@ const toolClass = (tool) => {
   color: #F1E2A6;
 }
 
-.html-tool {
-  border-bottom: 2px solid var(--html-color);
-}
-
-.css-tool {
-  border-bottom: 2px solid var(--css-color);
-}
-
-.bootstrap-tool {
-  border-bottom: 2px solid var(--bootstrap-color);
-}
-
-.php-tool {
-  border-bottom: 2px solid var(--php-color);
-}
-
-.js-tool {
-  border-bottom: 2px solid var(--js-color);
-}
-
-.jquery-tool {
-  border-bottom: 2px solid var(--jquery-color);
-}
-
-.sql-tool {
-  border-bottom: 2px solid var(--sql-color);
+.tool-underline {
+  border-bottom: 2px solid var(--tool-color);
 }
 </style>
