@@ -1,0 +1,58 @@
+{
+  "fr": {
+    "training": {
+      "title": "Formation",
+      "events": {
+        "e2n": {
+          "date": "Fév-Sep 2017",
+          "title": "Formation « Développement Web » à E2N (devenu <a href=\"https://lamanu.fr/\" id=\"link-lamanu\" title=\"Site de LA MANU\">LA MANU</a>) - Noyon",
+          "descriptions": [
+            "Formation de 6 mois à temps plein labellisée Grande École du Numérique par l’État.",
+            "Préparation/Obtention du Titre Professionnel « Développeur Logiciel », Titre certifié au RNCP Niveau III (Équivalent BAC+2)"
+          ]
+        },
+        "opquast": {
+          "date": "Avril 2017",
+          "title": "Formation à l'accessibilité web",
+          "descriptions": [
+            "Obtention du certificat OPQUAST niveau Intermédiaire."
+          ]
+        },
+        "highSchool": {
+          "date": "2013-2016",
+          "title": "Lycée Jean Calvin - Noyon",
+          "descriptions": [
+            "Seconde à Terminale S."
+          ]
+        }
+      }
+    }
+  },
+  "en": {
+    "training": {
+      "title": "Training",
+      "events": {
+        "e2n": {
+          "date": "Feb-Sep 2017",
+          "title": "« Web Development » training at E2N (now <a href=\"https://lamanu.fr/\" id=\"link-lamanu\" title=\"Site de LA MANU\">LA MANU</a>) - Noyon",
+          "descriptions": [
+            "Full-time 6-month training course labeled Grande École du Numérique by the State.",
+            "Preparation/Obtainment of the Professional Title \"Software Developer\", Certified title at RNCP Level III (BAC + 2 equivalent)"
+          ]
+        },
+        "opquast": {
+          "date": "April 2017",
+          "title": "Web accessibility training",
+          "descriptions": [
+            "Obtainment of the OPQUAST Intermediate level certificate."
+          ]
+        },
+        "highSchool": {
+          "date": "2013-2016",
+          "title": "Jean Calvin High School - Noyon",
+          "descriptions": []
+        }
+      }
+    }
+  }
+}
