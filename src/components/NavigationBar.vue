@@ -78,6 +78,20 @@ const updatePageTitle = (newLocale) => {
   font-weight: 600;
 }
 
+.dropdown-menu-custom {
+  padding: 0;
+  border-radius: 4px;
+}
+
+.dropdown-menu-custom .dropdown-item:active {
+  background-color: var(--accent-color) !important;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
 @media (max-width: 575px) {
   #navbar-content {
     margin-top: 0.5rem;
@@ -90,10 +104,10 @@ const updatePageTitle = (newLocale) => {
     border-radius: 0;
     background-color: rgb(255, 255, 255, 8%);
   }
-}
 
-.dropdown-menu-custom .dropdown-item:active {
-  background-color: var(--accent-color) !important;
+  .dropdown-item {
+    border-radius: 0;
+  }
 }
 
 #language-icon {
