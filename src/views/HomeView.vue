@@ -5,6 +5,7 @@ import SkillsBlock from '@/components/SkillsBlock.vue';
 import HobbiesBlock from '@/components/HobbiesBlock.vue';
 import DescriptionBlock from '@/components/DescriptionBlock.vue';
 import TrainingBlock from '@/components/TrainingBlock.vue';
+import ExperiencesBlock from '@/components/ExperiencesBlock.vue';
 
 // -- Methods --
 const currentYear = () => {
@@ -31,7 +32,7 @@ const currentYear = () => {
          
         <DescriptionBlock />
          <TrainingBlock />
-         <!-- <ExperiencesBlock /> -->
+         <ExperiencesBlock />
       </div>
        <div class="row mt-5 justify-content-center">
          <footer class="col-10 col-sm-8 col-lg-6 py-4 text-center">

@@ -1,0 +1,206 @@
+{
+  "fr": {
+    "experiences": {
+      "title": "Expériences Développement",
+      "toolsTitle": "Outils utilisés",
+      "events": {
+        "cvNum": {
+          "date": "Janvier 2021",
+          "title": "Développement d'un CV Numérique",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+          ]
+        },
+        "arnhembraun": {
+          "date": "Avril 2018",
+          "title": "Développement de <a href=\"https://arnhembraun.com/\" id=\"link-arnhembraun\">arnhembraun.com</a>",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+          ]
+        },
+        "xmlPhpGroup": {
+          "date": "Mai 2017",
+          "title": "Développement d'un site à partir d'un fichier XML avec PHP en groupe de 4 personnes",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "PHP"
+          ]
+        },
+        "initProg": {
+          "date": "Mai 2017",
+          "title": "Initiation à la programmation à de jeunes adultes",
+          "tools": [
+            "CodeCombat",
+            "Codecademy"
+          ]
+        },
+        "ecomAngular": {
+          "date": "Avril 2017",
+          "title": "Développement d'un site de e-commerce en AngularJS en groupe de 4 personnes (en étant chef de groupe)",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "AngularJS"
+          ]
+        },
+        "projetTP": {
+          "date": "Mar-Sep 2017",
+          "title": "Développement d'un site d'hébergement de photos servant de Projet pour le Titre Professionnel",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+          ]
+        },
+        "ecomJquery": {
+          "date": "Mars 2017",
+          "title": "Développement d'un site de e-commerce en jQuery en groupe de 4 personnes",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery"
+          ]
+        },
+        "transReponsive": {
+          "date": "Février 2017",
+          "title": "Transformation d'un site en site responsive en groupe de 4 personnes",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+          ]
+        },
+        "convertUnits": {
+          "date": "2016",
+          "title": "Création d'un site de conversion d'unités",
+          "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ]
+        }
+      }
+    }
+  },
+  "en": {
+    "experiences": {
+      "title": "Development experiences",
+      "toolsTitle": "Tools used",
+      "events": {
+        "cvNum": {
+          "date": "January 2021",
+          "title": "Development of a digital CV",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+          ]
+        },
+        "arnhembraun": {
+          "date": "April 2018",
+          "title": "Development of <a href=\"https://arnhembraun.com/\" id=\"link-arnhembraun\">arnhembraun.com</a>",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+          ]
+        },
+        "xmlPhpGroup": {
+          "date": "May 2017",
+          "title": "Development of a website from an XML file with PHP in a group of 4 people",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "PHP"
+          ]
+        },
+        "initProg": {
+          "date": "May 2017",
+          "title": "Programming introduction to young adults",
+          "tools": [
+            "CodeCombat",
+            "Codecademy"
+          ]
+        },
+        "ecomAngular": {
+          "date": "April 2017",
+          "title": "Development of an e-commerce website with AngularJS in a group of 4 people (being the group leader)",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "AngularJS"
+          ]
+        },
+        "projetTP": {
+          "date": "Mar-Sep 2017",
+          "title": "Development of a pictures hosting website used as a project for the Professional Title",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery",
+            "PHP",
+            "MySQL"
+          ]
+        },
+        "ecomJquery": {
+          "date": "March 2017",
+          "title": "Development of a jQuery e-commerce website in a group of 4 people",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "jQuery"
+          ]
+        },
+        "transReponsive": {
+          "date": "February 2017",
+          "title": "Transformation of a website into a responsive website in a group of 4 people",
+          "tools": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+          ]
+        },
+        "convertUnits": {
+          "date": "2016",
+          "title": "Creation of a unit conversion website",
+          "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ]
+        }
+      }
+    }
+  }
+}
