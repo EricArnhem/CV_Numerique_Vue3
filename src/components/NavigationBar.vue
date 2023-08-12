@@ -18,23 +18,10 @@ const updatePageTitle = (newLocale) => {
 </script>
 
 <template>
-  <nav class="navbar sticky-top navbar-dark navbar-expand-sm navbar-custom">
+  <nav class="navbar sticky-top navbar-dark navbar-expand navbar-custom">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 me-0 me-sm-3">Eric ARNHEM</span>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbar-content"
-        aria-controls="navbar-content"
-        aria-expanded="false"
-        aria-label="Ouvrir le menu de navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="navbar-nav ms-auto mb-1 mb-sm-0">
           <li class="nav-item dropdown">
             <a
@@ -61,7 +48,7 @@ const updatePageTitle = (newLocale) => {
             </ul>
           </li>
         </ul>
-      </div>
+
     </div>
   </nav>
 </template>
@@ -90,24 +77,6 @@ const updatePageTitle = (newLocale) => {
 .dropdown-item {
   padding: 8px 16px;
   border-radius: 4px;
-}
-
-@media (max-width: 575px) {
-  #navbar-content {
-    margin-top: 0.5rem;
-    border-top: 1px solid rgb(255, 255, 255, 40%);
-  }
-
-  .dropdown-menu-custom {
-    border: 0;
-    border-left: 2px solid rgb(255, 255, 255, 40%);
-    border-radius: 0;
-    background-color: rgb(255, 255, 255, 8%);
-  }
-
-  .dropdown-item {
-    border-radius: 0;
-  }
 }
 
 #language-icon {
