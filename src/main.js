@@ -17,6 +17,9 @@ const i18n = createI18n({
 })
 
 /* Font Awesome */
+// Font Awesome Animations
+import 'font-awesome-animation'
+
 // import the fontawesome core
 import { library } from '@fortawesome/fontawesome-svg-core'
 
