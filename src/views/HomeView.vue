@@ -62,7 +62,7 @@ const currentYear = () => {
 
   /* Adds a border-bottom on divs with ID starting with 'block-' */
   div[id^="block-"] {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid var(--block-border-color);
   }
 
 }
@@ -72,7 +72,7 @@ const currentYear = () => {
 
   /* Adds a full border on divs with ID starting with 'block-' */
   div[id^="block-"] {
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--block-border-color);
     border-radius: 0.25rem;
   }
 
