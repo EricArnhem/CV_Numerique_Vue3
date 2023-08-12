@@ -125,6 +125,8 @@ import skillsData from '@/assets/json/skillsData.json';
   height: 20px;
   font-size: 1rem;
   border-radius: 4px;
+  /* Reduces white corners caused by border-radius */
+  box-shadow: inset 1px 0px 0px 0px #202020;
 }
 
 .progress-bar {
