@@ -1,12 +1,12 @@
-body {
-  background-color: #202020;
-  color: #f8f9f9;
-  font-family: "Quicksand", sans-serif;
-}
-
 :root {
+  /* Main styles */
+  --main-bg-color: #202020;
+  --main-text-color: #f8f9f9;
+
+  /* Borders around content blocks */
   --block-border-color: #dee2e6;
 
+  /* Bottom borders under blocks titles */
   --border-gradient: linear-gradient(90deg, rgba(9, 9, 121, 1) 10%, rgb(0 175 223) 50%, rgba(9, 9, 121, 1) 90%) 1;
   --border-underline-style: 2px solid;
 
@@ -48,6 +48,12 @@ body {
   --wamp-percentage: 50%;
   --paintnet-percentage: 80%;
   --pencil-percentage: 70%;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
