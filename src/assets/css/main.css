@@ -6,6 +6,8 @@ body {
 
 :root {
   --accent-color: #8400ff;
+  --border-gradient: linear-gradient(90deg, rgba(9, 9, 121, 1) 10%, rgb(0 175 223) 50%, rgba(9, 9, 121, 1) 90%) 1;
+  --border-underline-style: 2px solid;
 
   /* Skills colors */
   --html-color: #e44d26;
@@ -52,8 +54,9 @@ a {
 }
 
 h2 {
-  border-bottom: 1px solid var(--accent-color);
   text-align: center;
+  border-bottom: var(--border-underline-style);
+  border-image: var(--border-gradient);
 }
 
 .fw-500 {

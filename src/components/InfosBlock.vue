@@ -45,7 +45,8 @@ useI18n();
 }
 
 #info-personnal {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: var(--border-underline-style);
+  border-image: var(--border-gradient);
 }
 
 #info-job {
