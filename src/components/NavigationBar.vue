@@ -68,6 +68,7 @@ const updatePageTitle = (newLocale) => {
 .dropdown-menu-custom {
   padding: 0;
   border-radius: 4px;
+  border: 1px solid var(--block-border-color);
 }
 
 .dropdown-menu-custom li:first-child .dropdown-item {
@@ -78,6 +79,11 @@ const updatePageTitle = (newLocale) => {
 .dropdown-menu-custom li:last-child .dropdown-item {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.dropdown-menu-custom li:not(:last-child) .dropdown-item {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(222, 226, 230, 1) 30%, rgba(222, 226, 230, 1) 70%, rgba(255, 255, 255, 0) 100%) 1;
 }
 
 .dropdown-menu-custom .dropdown-item:active {
