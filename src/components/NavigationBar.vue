@@ -87,7 +87,7 @@ const updatePageTitle = (newLocale) => {
 }
 
 .dropdown-menu-custom .dropdown-item:active {
-  background-color: var(--accent-color) !important;
+  background-color: #81a7ff;
 }
 
 .dropdown-item {
