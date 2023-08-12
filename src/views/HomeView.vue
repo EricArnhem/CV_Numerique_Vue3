@@ -85,6 +85,7 @@ const currentYear = () => {
 }
 
 footer {
-  border-top: 1px solid rgb(222 226 230 / 36%);
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(222 226 230 / 36%) 20%, rgb(222 226 230 / 36%) 80%, rgba(255, 255, 255, 0) 100%) 1;
 }
 </style>
