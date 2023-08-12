@@ -17,36 +17,42 @@ const currentYear = () => {
 
 <template>
   <NavigationBar />
-  <div id="main-container" class="container-fluid mt-md-5">
-    <div id="main-row" class="row justify-content-center mx-auto">
 
-      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 col-xxl-3">
+  <main>
+    <div id="main-container" class="container-fluid mt-md-5">
+      <div id="main-row" class="row justify-content-center mx-auto">
         
-        <InfosBlock />
-        <SkillsBlock />
-        <HobbiesBlock />
-
-       </div>
-
-       <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-6">
-         
-        <DescriptionBlock />
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 col-xxl-3">
+          <InfosBlock />
+          <SkillsBlock />
+          <HobbiesBlock />
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-6">
+          <DescriptionBlock />
          <TrainingBlock />
          <ExperiencesBlock />
+        </div>
+        
       </div>
-       <div class="row mt-5 justify-content-center">
-         <footer class="col-10 col-sm-8 col-lg-6 py-4 text-center">
-           <span>© <span id="current-year">{{ currentYear() }}</span> Eric Arnhem.</span>
-         </footer>
-       </div>
-       
+    </div>
+  </main>
+  
+  <div id="footer-container" class="container-fluid">
+    <div id="footer-row" class="row mt-5 justify-content-center mx-auto">
+
+      <footer class="col-10 col-sm-8 col-lg-6 py-4 text-center">
+        <span>© <span id="current-year">{{ currentYear() }}</span> Eric Arnhem.</span>
+      </footer>
+      
     </div>
   </div>
 
 </template>
 
 <style>
-#main-row {
+#main-row,
+#footer-row {
   max-width: 2000px;
 }
 
