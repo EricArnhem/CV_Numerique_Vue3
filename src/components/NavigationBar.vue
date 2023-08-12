@@ -70,13 +70,22 @@ const updatePageTitle = (newLocale) => {
   border-radius: 4px;
 }
 
+.dropdown-menu-custom li:first-child .dropdown-item {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.dropdown-menu-custom li:last-child .dropdown-item {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .dropdown-menu-custom .dropdown-item:active {
   background-color: var(--accent-color) !important;
 }
 
 .dropdown-item {
   padding: 8px 16px;
-  border-radius: 4px;
 }
 
 #language-icon {
