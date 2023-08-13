@@ -22,6 +22,10 @@
           "Vue.js": {
             "shortname": "vuejs",
             "percentage": 60
+          },
+          "jQuery": {
+            "shortname": "jquery",
+            "percentage": 60
           }
         }
       },
