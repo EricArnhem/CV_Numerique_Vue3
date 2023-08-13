@@ -35,19 +35,42 @@ docReady(() => {
     }, delay);
   }
 
+
   /* FOR DESKTOPS */
+  const requiredClicks = 5; // Number of consecutive clicks required
+  const maxClickDelay = 500; // Maximum time between clicks in milliseconds
+  let clickCount = 0;
+  let lastClickTime = 0;
+
   // Shoots confettis when clicking 5 times in a row on the navbar-brand
-  navbarBrand.addEventListener('click', (event) => {
-    if (event.detail === 5) {
+  navbarBrand.addEventListener('click', () => {
+    const currentTime = new Date().getTime();
 
-      confettiBurst();
+    // If we clicked on the navbar-brand again under the provided delay
+    if (currentTime - lastClickTime < maxClickDelay) {
 
+      clickCount++; // Increases click count
+
+      // If the click count reaches the required number of clicks
+      if (clickCount === requiredClicks) {
+
+        // Shoots the confettis and resets the click count
+        confettiBurst();
+        clickCount = 0;
+
+      }
+
+    } else {
+      clickCount = 1;
     }
+
+    lastClickTime = currentTime;
   });
 
+
   /* FOR TOUCHSCREENS */
-  const requiredTaps = 5; // Number of consecutive taps required
-  const maxTapDelay = 500; // Maximum time between taps in milliseconds
+  const requiredTaps = requiredClicks; // Number of consecutive taps required
+  const maxTapDelay = maxClickDelay; // Maximum time between taps in milliseconds
   let tapCount = 0;
   let lastTapTime = 0;
 
