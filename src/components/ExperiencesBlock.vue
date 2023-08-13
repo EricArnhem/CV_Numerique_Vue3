@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 useI18n();
 
+// Add tool name as key and shortname used in CSS variable to add an underline on the tool name in the tools used list
 const toolsShortNames = {
   "HTML": "html",
   "CSS": "css",
