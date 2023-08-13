@@ -9,7 +9,8 @@ const toolsShortNames = {
   "JavaScript": "js",
   "jQuery": "jquery",
   "PHP": "php",
-  "MySQL": "sql"
+  "MySQL": "sql",
+  "Vue.js": "vuejs"
 }
 
 // -- Methods --

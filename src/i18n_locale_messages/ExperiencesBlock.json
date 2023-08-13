@@ -108,12 +108,13 @@
       "events": {
         "cvNum": {
           "date": "January 2021",
-          "title": "Development of a digital CV",
+          "title": "Development of a digital Resume",
           "tools": [
             "HTML",
             "CSS",
             "Bootstrap",
-            "JavaScript"
+            "JavaScript",
+            "Vue.js"
           ]
         },
         "arnhembraun": {
