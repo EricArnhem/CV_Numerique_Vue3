@@ -7,7 +7,7 @@
   --block-border-color: #dee2e6;
 
   /* Bottom borders under blocks titles */
-  --border-gradient: linear-gradient(90deg, rgba(9, 9, 121, 1) 10%, rgb(0 175 223) 50%, rgba(9, 9, 121, 1) 90%) 1;
+  --border-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(9, 9, 121, 1) 5%, rgb(0 175 223) 50%, rgba(9, 9, 121, 1) 95%, rgba(255, 255, 255, 0) 100%) 1;
   --border-underline-style: 2px solid;
 
   /* Skills colors */
