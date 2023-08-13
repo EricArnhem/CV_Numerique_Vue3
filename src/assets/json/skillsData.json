@@ -3,7 +3,7 @@
     {
       "HTML": {
         "shortname": "html",
-        "percentage": 70
+        "percentage": 80
       },
       "CSS": {
         "shortname": "css",
@@ -17,11 +17,11 @@
       },
       "JavaScript": {
         "shortname": "js",
-        "percentage": 50,
+        "percentage": 70,
         "frameworks": {
           "Vue.js": {
             "shortname": "vuejs",
-            "percentage": 30
+            "percentage": 60
           }
         }
       },
