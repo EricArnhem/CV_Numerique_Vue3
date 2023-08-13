@@ -21,12 +21,18 @@ docReady(() => {
   const confettiBurst = () => {
     let counter = 0;
     let maxLoops = 3 // Amount of confettis shots
-    let delay = 700 // Delay between confettis shots
+    let delay = 200 // Delay between confettis shots
 
     let interval = setInterval(() => {
       counter++
 
-      jsConfetti.addConfetti();
+      jsConfetti.addConfetti({
+        confettiRadius: 5,
+        confettiColors: [
+          '#8d32fc', '#29cdff', '#6dff33', '#ff335c', '#fcff33', '#ff9233', '#ff33f5'
+        ],
+        confettiNumber: 200,
+      });
 
       if (counter >= maxLoops) {
         clearInterval(interval);
