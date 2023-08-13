@@ -1,4 +1,5 @@
 <script setup>
+import '@/assets/js/confetti.js';
 import { useI18n } from 'vue-i18n';
 
 const { t, locale } = useI18n();
@@ -63,6 +64,7 @@ const updatePageTitle = (newLocale) => {
 
 .navbar-brand {
   font-weight: 600;
+  user-select: none;
 }
 
 .dropdown-menu-custom {
@@ -98,5 +100,9 @@ const updatePageTitle = (newLocale) => {
   font-size: 19px;
   vertical-align: middle;
   margin-right: 0.2rem;
+}
+
+canvas {
+  z-index: 1030 !important;
 }
 </style>
