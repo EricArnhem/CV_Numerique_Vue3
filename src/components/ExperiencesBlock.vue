@@ -2,8 +2,8 @@
 import { useI18n } from 'vue-i18n';
 useI18n();
 
-// Add tool name as key and shortname used in CSS variable to add an underline on the tool name in the tools used list
-const toolsShortNames = {
+// Add technology name as key and shortname used in CSS variable to add an underline on the technology name in the technologies used list
+const technologiesShortNames = {
   "HTML": "html",
   "CSS": "css",
   "Bootstrap": "bootstrap",
@@ -16,11 +16,11 @@ const toolsShortNames = {
 
 // -- Methods --
 
-// Get a tool CSS color variable (used to apply the colored underline)
-const getToolColorVariable = (tool) => {
-  if (toolsShortNames[tool]) {
-    let toolShortname = toolsShortNames[tool];
-    return `--${toolShortname}-color`;
+// Get a technology CSS color variable (used to apply the colored underline)
+const getTechnologyColorVariable = (technology) => {
+  if (technologiesShortNames[technology]) {
+    let technologyShortname = technologiesShortNames[technology];
+    return `--${technologyShortname}-color`;
   }
 };
 
@@ -42,21 +42,21 @@ const getToolColorVariable = (tool) => {
 
             <span class="experience-title" v-html="$rt(event.title)"></span>
 
-            <ul class="experience-tools">
+            <ul class="experience-technologies">
               <li>
-                <span class="fw-500">{{ $t('experiences.toolsTitle') }}: </span>
+                <span class="fw-500">{{ $t('experiences.technologiesTitle') }}: </span>
                 
-                <!-- Displays each tool used for the event -->
-                <span v-for="(tool, index) in event.tools" :key="name + tool">
+                <!-- Displays each technology used for the event -->
+                <span v-for="(technology, index) in event.technologies" :key="name + technology">
 
                   <span
-                    class="tool-underline"
-                    :style="{ '--tool-color': `var(${getToolColorVariable($rt(tool))})` }">
-                    {{ $rt(tool) }}
+                    class="technology-underline"
+                    :style="{ '--technology-color': `var(${getTechnologyColorVariable($rt(technology))})` }">
+                    {{ $rt(technology) }}
                   </span>
 
-                  <!-- Adds a comma after each tool except the last one -->
-                  <span v-if="index != Object.keys(event.tools).length - 1">, </span>
+                  <!-- Adds a comma after each technology except the last one -->
+                  <span v-if="index != Object.keys(event.technologies).length - 1">, </span>
 
                 </span>
               </li>
@@ -135,12 +135,12 @@ const getToolColorVariable = (tool) => {
   font-size: 1.25rem;
 }
 
-.experience-tools {
+.experience-technologies {
   list-style: square;
   margin-top: 1rem;
 }
 
-.experience-tools li {
+.experience-technologies li {
   margin-bottom: .5rem;
 }
 
@@ -148,7 +148,7 @@ const getToolColorVariable = (tool) => {
   color: #F1E2A6;
 }
 
-.tool-underline {
-  border-bottom: 2px solid var(--tool-color);
+.technology-underline {
+  border-bottom: 2px solid var(--technology-color);
 }
 </style>
