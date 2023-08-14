@@ -1,4 +1,14 @@
 <script setup>
+import { onMounted } from 'vue';
+import AOS from 'aos';
+
+onMounted(() => {
+  AOS.init({
+    duration: 700,
+    once: true
+  });
+})
+
 import NavigationBar from '@/components/NavigationBar.vue';
 import InfosBlock from '@/components/InfosBlock.vue';
 import SkillsBlock from '@/components/SkillsBlock.vue';
@@ -23,15 +33,27 @@ const currentYear = () => {
       <div id="main-row" class="row justify-content-center mx-auto">
         
         <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 col-xxl-3">
-          <InfosBlock />
-          <SkillsBlock />
-          <HobbiesBlock />
+          <div data-aos="fade-right-xl-left-sm" data-aos-delay="100">
+            <InfosBlock />
+          </div>
+          <div data-aos="fade-right" data-aos-delay="300">
+            <SkillsBlock />
+          </div>
+          <div data-aos="fade-right-xl-left-sm" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+            <HobbiesBlock />
+          </div>
         </div>
         
         <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-6">
-          <DescriptionBlock />
-         <TrainingBlock />
-         <ExperiencesBlock />
+          <div data-aos="fade-left-xl-right-sm" data-aos-delay="200">
+            <DescriptionBlock />
+          </div>
+          <div data-aos="fade-left" data-aos-delay="400">
+            <TrainingBlock />
+          </div>
+          <div data-aos="fade-left-xl-right-sm" data-aos-delay="500" data-aos-anchor-placement="top-bottom">
+            <ExperiencesBlock />
+          </div>
         </div>
         
       </div>
@@ -54,6 +76,7 @@ const currentYear = () => {
 #main-row,
 #footer-row {
   max-width: 2000px;
+  overflow: hidden;
 }
 
 /* For xs and sm displays */
@@ -87,5 +110,46 @@ const currentYear = () => {
 footer {
   border-top: 1px solid;
   border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(222 226 230 / 36%) 20%, rgb(222 226 230 / 36%) 80%, rgba(255, 255, 255, 0) 100%) 1;
+}
+
+/* AOS */
+
+/* Large screens -> Fade to right / Small screens -> Fade to left */
+[data-aos="fade-right-xl-left-sm"] {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-right-xl-left-sm"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Large screens -> Fade to left / Small screens -> Fade to right */
+[data-aos="fade-left-xl-right-sm"] {
+  opacity: 0;
+  transform: translateX(100px);
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-left-xl-right-sm"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos] {
+    /* Sets global transition delay for small screens */
+    transition-delay: 100ms !important;
+  }
+
+  [data-aos="fade-right-xl-left-sm"] {
+    transform: translateX(100px);
+  }
+
+  [data-aos="fade-left-xl-right-sm"] {
+    transform: translateX(-100px);
+  }
 }
 </style>
