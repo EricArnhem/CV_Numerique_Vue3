@@ -2,7 +2,7 @@
   "fr": {
     "skills": {
       "title": "Compétences",
-      "programmingLanguages": "Langages informatiques",
+      "webTechnologies": "Technologies Web",
       "tools": {
         "title": "Outils",
         "commandLine": "Ligne de commande"
@@ -16,7 +16,7 @@
   "en": {
     "skills": {
       "title": "Skills",
-      "programmingLanguages": "Programming languages",
+      "webTechnologies": "Web Technologies",
       "tools": {
         "title": "Tools",
         "commandLine": "Command line"

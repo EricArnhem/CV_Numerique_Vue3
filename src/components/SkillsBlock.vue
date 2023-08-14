@@ -11,12 +11,12 @@ import skillsData from '@/assets/json/skillsData.json';
     <h2>{{ $t('skills.title') }}</h2>
 
     <h3 class="fs-5">
-      <font-awesome-icon :icon="['fas', 'chevron-right']" /> {{ $t('skills.programmingLanguages') }}
+      <font-awesome-icon :icon="['fas', 'chevron-right']" /> {{ $t('skills.webTechnologies') }}
     </h3>
     <ul class="skill-list">
       
-      <!-- Programming languages -->
-      <li v-for="(skill, name) in skillsData.programmingLanguages[0]" :key="skill.shortname" :id="'skill-' + skill.shortname">
+      <!-- Web Technologies -->
+      <li v-for="(skill, name) in skillsData.webTechnologies[0]" :key="skill.shortname" :id="'skill-' + skill.shortname">
         <span class="skill-name">{{ name }}</span>
 
         <div class="progress">
