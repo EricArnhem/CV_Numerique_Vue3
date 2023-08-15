@@ -6,7 +6,7 @@
       "events": {
         "starshipGame": {
           "date": "2022-2023",
-          "title": "Développement d'un mini jeu dans lequel on peut créer un vaisseau spatial, choisir sa classe et contrôler certaines de ses actions comme \"démarrer/arrêter les moteurs\" via des boutons sur un tableau de bord",
+          "title": "Développement d'un mini jeu dans lequel on peut créer un vaisseau spatial, choisir sa classe et contrôler certaines de ses actions via des boutons sur un tableau de bord",
           "technologies": [
             "HTML",
             "CSS",
@@ -121,6 +121,20 @@
       "title": "Development experiences",
       "technologiesTitle": "Technologies used",
       "events": {
+        "starshipGame": {
+          "date": "2022-2023",
+          "title": "Development of a minigame in which we can create a starship, choose its class and control some of its actions via buttons on a dashboard",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js",
+            "Axios",
+            "Node.js",
+            "Express",
+            "MySQL"
+          ]
+        },
         "cvNum": {
           "date": "January 2021",
           "title": "Development of a digital Resume",
