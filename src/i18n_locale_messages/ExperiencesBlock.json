@@ -4,6 +4,20 @@
       "title": "Expériences Développement",
       "technologiesTitle": "Technologies utilisés",
       "events": {
+        "starshipGame": {
+          "date": "2022-2023",
+          "title": "Développement d'un mini jeu dans lequel on peut créer un vaisseau spatial, choisir sa classe et contrôler certaines de ses actions comme \"démarrer/arrêter les moteurs\" via des boutons sur un tableau de bord",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js",
+            "Axios",
+            "Node.js",
+            "Express",
+            "MySQL"
+          ]
+        },
         "cvNum": {
           "date": "Janvier 2021",
           "title": "Développement d'un CV Numérique",

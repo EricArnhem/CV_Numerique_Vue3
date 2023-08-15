@@ -11,7 +11,11 @@ const technologiesShortNames = {
   "jQuery": "jquery",
   "PHP": "php",
   "MySQL": "sql",
-  "Vue.js": "vuejs"
+  "Vue.js": "vuejs",
+  "Node.js": "nodejs",
+  "Express": "express",
+  "Sequelize": "sequelize",
+  "Axios": "axios",
 }
 
 // -- Methods --
