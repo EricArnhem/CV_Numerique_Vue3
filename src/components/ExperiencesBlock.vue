@@ -2,28 +2,14 @@
 import { useI18n } from 'vue-i18n';
 useI18n();
 
-// Add technology name as key and shortname used in CSS variable to add an underline on the technology name in the technologies used list
-const technologiesShortNames = {
-  "HTML": "html",
-  "CSS": "css",
-  "Bootstrap": "bootstrap",
-  "JavaScript": "js",
-  "jQuery": "jquery",
-  "PHP": "php",
-  "MySQL": "sql",
-  "Vue.js": "vuejs",
-  "Node.js": "nodejs",
-  "Express": "express",
-  "Sequelize": "sequelize",
-  "Axios": "axios",
-}
+import skillsShortnames from '@/assets/json/skillsShortnames';
 
 // -- Methods --
 
 // Get a technology CSS color variable (used to apply the colored underline)
 const getTechnologyColorVariable = (technology) => {
-  if (technologiesShortNames[technology]) {
-    let technologyShortname = technologiesShortNames[technology];
+  if (skillsShortnames[technology]) {
+    let technologyShortname = skillsShortnames[technology];
     return `--${technologyShortname}-color`;
   }
 };

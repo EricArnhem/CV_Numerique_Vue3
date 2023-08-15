@@ -74,7 +74,7 @@ docReady(function () {
   let observer = new IntersectionObserver(callback, options);
 
   // For each skill
-  skillsShortnames.forEach(shortname => {
+  Object.values(skillsShortnames).forEach(shortname => {
 
     // Sets the skill's progress bar as a target of the observer
     observer.observe(document.querySelector(`#skill-${shortname} > .progress`));
