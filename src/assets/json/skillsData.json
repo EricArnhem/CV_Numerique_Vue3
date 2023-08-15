@@ -29,6 +29,16 @@
           }
         }
       },
+      "Node.js": {
+        "shortname": "nodejs",
+        "percentage": 50,
+        "frameworks": {
+          "Express": {
+            "shortname": "express",
+            "percentage": 40
+          }
+        }
+      },
       "PHP": {
         "shortname": "php",
         "percentage": 60
@@ -36,6 +46,14 @@
       "SQL (MySQL)": {
         "shortname": "sql",
         "percentage": 50
+      },
+      "Sequelize": {
+        "shortname": "sequelize",
+        "percentage": 70
+      },
+      "Axios": {
+        "shortname": "axios",
+        "percentage": 70
       }
     }
   ],
