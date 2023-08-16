@@ -37,7 +37,7 @@ const getTechnologyColor = (technology) => {
                 <span class="fw-500">{{ $t('experiences.technologiesTitle') }}: </span>
                 
                 <!-- Displays each technology used for the event -->
-                <span class="experience-technology" v-for="(technology, index) in event.technologies" :key="name + technology">
+                <span class="experience-technology" v-for="(technology) in event.technologies" :key="name + technology">
 
                   <span
                     class="technology-underline"
