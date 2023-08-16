@@ -39,7 +39,7 @@ const getSkillLogoURL = (skillShortname) => {
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+            :style="{ 'background-color': skill.color }"
           >
             {{ skill.percentage }}%
           </div>
@@ -62,7 +62,7 @@ const getSkillLogoURL = (skillShortname) => {
                 :aria-valuenow="framework.percentage"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                :style="{ 'background-color': `var(--${framework.shortname}-color)` }"
+                :style="{ 'background-color': framework.color }"
               >
                 {{ framework.percentage }}%
               </div>
@@ -95,7 +95,7 @@ const getSkillLogoURL = (skillShortname) => {
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+            :style="{ 'background-color': skill.color }"
           >
             {{ skill.percentage }}%
           </div>
@@ -126,7 +126,7 @@ const getSkillLogoURL = (skillShortname) => {
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+            :style="{ 'background-color': skill.color }"
           >
             {{ skill.percentage }}%
           </div>
