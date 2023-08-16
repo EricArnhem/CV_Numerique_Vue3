@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 useI18n();
 
-import skillsShortnames from '@/assets/json/skillsShortnames';
+import skillsShortnames from '@/assets/js/skills-shortnames.js';
 
 // -- Methods --
 
