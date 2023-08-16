@@ -1,5 +1,5 @@
 // Function to load a progress bar
-import skillsShortnames from '@/assets/js/skills-shortnames.js';
+import { skillsShortnames } from '@/assets/js/skillsDataProcessor.js';
 
 function loadProgressBar(skillId) {
 
