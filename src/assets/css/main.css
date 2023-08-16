@@ -33,25 +33,6 @@
   --wamp-color: #ce1885;
   --paintnet-color: #7293c4;
   --pencil-color: #f18d00;
-
-  /* Skills percentages */
-  --html-percentage: 80%;
-  --css-percentage: 80%;
-  --bootstrap-percentage: 70%;
-  --js-percentage: 50%;
-  --vuejs-percentage: 30%;
-  --php-percentage: 60%;
-  --mysql-percentage: 50%;
-  --windows-percentage: 80%;
-  --linux-percentage: 70%;
-  --vscode-percentage: 70%;
-  --nano-percentage: 90%;
-  --commandline-percentage: 60%;
-  --git-percentage: 70%;
-  --github-percentage: 70%;
-  --wamp-percentage: 50%;
-  --paintnet-percentage: 80%;
-  --pencil-percentage: 70%;
 }
 
 body {
