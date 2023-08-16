@@ -139,7 +139,7 @@ import skillsData from '@/assets/json/skillsData.json';
 </style>
 
 <style lang="scss">
-$skills: 'html', 'css', 'bootstrap', 'js', 'vuejs', 'jquery', 'nodejs', 'express', 'sequelize', 'axios', 'php', 'sql', 'windows', 'linux', 'vscode', 'nano', 'commandline', 'git', 'github', 'wamp', 'paintnet', 'pencil';
+$skills: 'html', 'css', 'bootstrap', 'js', 'vuejs', 'jquery', 'nodejs', 'express', 'sequelize', 'axios', 'php', 'mysql', 'windows', 'linux', 'vscode', 'nano', 'commandline', 'git', 'github', 'wamp', 'paintnet', 'pencil';
 
 @each $skill in $skills {
 

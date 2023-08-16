@@ -8,7 +8,7 @@
   "Node.js": "nodejs",
   "Express": "express",
   "PHP": "php",
-  "MySQL": "sql",
+  "MySQL": "mysql",
   "Sequelize": "sequelize",
   "Axios": "axios",
   "Windows": "windows",

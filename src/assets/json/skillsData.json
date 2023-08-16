@@ -43,9 +43,9 @@
         "shortname": "php",
         "percentage": 60
       },
-      "SQL (MySQL)": {
-        "shortname": "sql",
-        "percentage": 50
+      "MySQL": {
+        "shortname": "mysql",
+        "percentage": 60
       },
       "Sequelize": {
         "shortname": "sequelize",
