@@ -9,30 +9,6 @@
   /* Bottom borders under blocks titles */
   --border-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(9, 9, 121, 1) 5%, rgb(0 175 223) 50%, rgba(9, 9, 121, 1) 95%, rgba(255, 255, 255, 0) 100%) 1;
   --border-underline-style: 2px solid;
-
-  /* Skills colors */
-  --html-color: #e44d26;
-  --css-color: #1a5aa7;
-  --bootstrap-color: #614092;
-  --js-color: #d4b800;
-  --jquery-color: #0769ad;
-  --vuejs-color: #3FB984;
-  --nodejs-color: #458f41;
-  --express-color: #8a8a8a;
-  --php-color: #8892be;
-  --mysql-color: #4479a1;
-  --sequelize-color: #3b76c3;
-  --axios-color: #5a29e4;
-  --windows-color: #1894ce;
-  --linux-color: #e5aa34;
-  --vscode-color: #1887d1;
-  --nano-color: #8518ce;
-  --commandline-color: #2b2b2b;
-  --git-color: #ea4e44;
-  --github-color: #161b22;
-  --wamp-color: #ce1885;
-  --paintnet-color: #7293c4;
-  --pencil-color: #f18d00;
 }
 
 body {
