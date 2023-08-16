@@ -3,57 +3,69 @@
     {
       "HTML": {
         "shortname": "html",
-        "percentage": 80
+        "percentage": 80,
+        "color": "#e44d26"
       },
       "CSS": {
         "shortname": "css",
         "percentage": 80,
+        "color": "#1a5aa7",
         "frameworks": {
           "Bootstrap": {
             "shortname": "bootstrap",
-            "percentage": 70
+            "percentage": 70,
+            "color": "#614092"
           }
         }
       },
       "JavaScript": {
         "shortname": "js",
         "percentage": 70,
+        "color": "#d4b800",
         "frameworks": {
           "Vue.js": {
             "shortname": "vuejs",
-            "percentage": 60
+            "percentage": 60,
+            "color": "#3FB984"
           },
           "jQuery": {
             "shortname": "jquery",
-            "percentage": 60
+            "percentage": 60,
+            "color": "#0769ad"
           }
         }
       },
       "Node.js": {
         "shortname": "nodejs",
         "percentage": 50,
+        "color": "#458f41",
         "frameworks": {
           "Express": {
             "shortname": "express",
-            "percentage": 40
+            "percentage": 40,
+            "color": "#8a8a8a"
           }
         }
       },
       "PHP": {
         "shortname": "php",
-        "percentage": 60
+        "percentage": 60,
+        "color": "#8892be"
       },
       "MySQL": {
         "shortname": "mysql",
-        "percentage": 60
+        "percentage": 60,
+        "color": "#4479a1"
       },
       "Sequelize": {
         "shortname": "sequelize",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#3b76c3"
       },
       "Axios": {
         "shortname": "axios",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#5a29e4"
       }
     }
   ],
@@ -61,11 +73,13 @@
     {
       "Windows": {
         "shortname": "windows",
-        "percentage": 80
+        "percentage": 80,
+        "color": "#1894ce"
       },
       "Linux": {
         "shortname": "linux",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#e5aa34"
       }
     }
   ],
@@ -73,35 +87,43 @@
     {
       "Visual Studio Code": {
         "shortname": "vscode",
-        "percentage": 80
+        "percentage": 80,
+        "color": "#1887d1"
       },
       "Nano": {
         "shortname": "nano",
-        "percentage": 90
+        "percentage": 90,
+        "color": "#8518ce"
       },
       "Ligne de commande": {
         "shortname": "commandline",
-        "percentage": 60
+        "percentage": 60,
+        "color": "#2b2b2b"
       },
       "Git": {
         "shortname": "git",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#ea4e44"
       },
       "GitHub": {
         "shortname": "github",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#161b22"
       },
       "WAMP/LAMP": {
         "shortname": "wamp",
-        "percentage": 50
+        "percentage": 50,
+        "color": "#ce1885"
       },
       "Paint.NET": {
         "shortname": "paintnet",
-        "percentage": 80
+        "percentage": 80,
+        "color": "#7293c4"
       },
       "Pencil": {
         "shortname": "pencil",
-        "percentage": 70
+        "percentage": 70,
+        "color": "#f18d00"
       }
     }
   ]
