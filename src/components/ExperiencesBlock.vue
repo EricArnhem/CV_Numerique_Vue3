@@ -37,16 +37,13 @@ const getTechnologyColor = (technology) => {
                 <span class="fw-500">{{ $t('experiences.technologiesTitle') }}: </span>
                 
                 <!-- Displays each technology used for the event -->
-                <span v-for="(technology, index) in event.technologies" :key="name + technology">
+                <span class="experience-technology" v-for="(technology, index) in event.technologies" :key="name + technology">
 
                   <span
                     class="technology-underline"
                     :style="{ '--technology-color': getTechnologyColor($rt(technology)) }">
                     {{ $rt(technology) }}
                   </span>
-
-                  <!-- Adds a comma after each technology except the last one -->
-                  <span v-if="index != Object.keys(event.technologies).length - 1">, </span>
 
                 </span>
               </li>
@@ -132,6 +129,11 @@ const getTechnologyColor = (technology) => {
 
 .experience-technologies li {
   margin-bottom: .5rem;
+}
+
+.experience-technology~.experience-technology::before {
+  /* Add a comma after each technology except the last one */
+  content: ', ';
 }
 
 #link-arnhembraun:hover {
