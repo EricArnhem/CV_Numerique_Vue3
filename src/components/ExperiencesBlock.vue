@@ -2,15 +2,15 @@
 import { useI18n } from 'vue-i18n';
 useI18n();
 
-import skillsShortnames from '@/assets/js/skills-shortnames.js';
+import { skillsColors } from '@/assets/js/skillsDataProcessor.js';
 
 // -- Methods --
 
-// Get a technology CSS color variable (used to apply the colored underline)
-const getTechnologyColorVariable = (technology) => {
-  if (skillsShortnames[technology]) {
-    let technologyShortname = skillsShortnames[technology];
-    return `--${technologyShortname}-color`;
+// Get a technology color (used to apply the colored underline)
+const getTechnologyColor = (technology) => {
+  if (skillsColors[technology]) {
+    const technologyColor = skillsColors[technology];
+    return technologyColor;
   }
 };
 
@@ -41,7 +41,7 @@ const getTechnologyColorVariable = (technology) => {
 
                   <span
                     class="technology-underline"
-                    :style="{ '--technology-color': `var(${getTechnologyColorVariable($rt(technology))})` }">
+                    :style="{ '--technology-color': getTechnologyColor($rt(technology)) }">
                     {{ $rt(technology) }}
                   </span>
 
