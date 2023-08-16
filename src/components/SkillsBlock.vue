@@ -4,6 +4,13 @@ useI18n();
 
 import '@/assets/js/progressBars.js';
 import skillsData from '@/assets/json/skillsData.json';
+
+// -- Methods --
+
+const getSkillLogoURL = (skillShortname) => {
+  const logoURL = new URL(`../assets/img/logos/${skillShortname}.png`, import.meta.url).href;
+  return logoURL;
+}
 </script>
 
 <template>
@@ -16,7 +23,13 @@ import skillsData from '@/assets/json/skillsData.json';
     <ul class="skill-list">
       
       <!-- Web Technologies -->
-      <li v-for="(skill, name) in skillsData.webTechnologies[0]" :key="skill.shortname" :id="'skill-' + skill.shortname">
+      <li 
+        v-for="(skill, name) in skillsData.webTechnologies[0]" 
+        :key="skill.shortname" 
+        :id="'skill-' + skill.shortname"
+        :style="{ 'list-style-image': `url(${getSkillLogoURL(skill.shortname)})` }"
+      >
+
         <span class="skill-name">{{ name }}</span>
 
         <div class="progress">
@@ -26,12 +39,20 @@ import skillsData from '@/assets/json/skillsData.json';
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-          >{{ skill.percentage }}%</div>
+            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+          >
+            {{ skill.percentage }}%
+          </div>
         </div>
 
         <ul v-if="skill.frameworks" class="framework-list">
 
-          <li v-for="(framework, name) in skill.frameworks" :key="framework.shortname" :id="'skill-' + framework.shortname">
+          <li 
+            v-for="(framework, name) in skill.frameworks" 
+            :key="framework.shortname" 
+            :id="'skill-' + framework.shortname"
+            :style="{ 'list-style-image': `url(${getSkillLogoURL(framework.shortname)})` }"
+          >
             <span class="skill-name">{{ name }}</span>
 
             <div class="progress">
@@ -41,7 +62,10 @@ import skillsData from '@/assets/json/skillsData.json';
                 :aria-valuenow="framework.percentage"
                 aria-valuemin="0"
                 aria-valuemax="100"
-              >{{ framework.percentage }}%</div>
+                :style="{ 'background-color': `var(--${framework.shortname}-color)` }"
+              >
+                {{ framework.percentage }}%
+              </div>
             </div>
 
           </li>
@@ -56,7 +80,12 @@ import skillsData from '@/assets/json/skillsData.json';
     <ul class="skill-list">
 
       <!-- OS -->
-      <li v-for="(skill, name) in skillsData.operatingSystems[0]" :key="skill.shortname" :id="'skill-' + skill.shortname">
+      <li 
+        v-for="(skill, name) in skillsData.operatingSystems[0]" 
+        :key="skill.shortname" 
+        :id="'skill-' + skill.shortname"
+        :style="{ 'list-style-image': `url(${getSkillLogoURL(skill.shortname)})` }"
+      >
         <span class="skill-name">{{ name }}</span>
 
         <div class="progress">
@@ -66,7 +95,10 @@ import skillsData from '@/assets/json/skillsData.json';
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-          >{{ skill.percentage }}%</div>
+            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+          >
+            {{ skill.percentage }}%
+          </div>
         </div>
 
       </li>
@@ -78,7 +110,12 @@ import skillsData from '@/assets/json/skillsData.json';
     <ul class="skill-list">
 
       <!-- Tools -->
-      <li v-for="(skill, name) in skillsData.tools[0]" :key="skill.shortname" :id="'skill-' + skill.shortname">
+      <li 
+        v-for="(skill, name) in skillsData.tools[0]" 
+        :key="skill.shortname" 
+        :id="'skill-' + skill.shortname"
+        :style="{ 'list-style-image': `url(${getSkillLogoURL(skill.shortname)})` }"
+      >
         <span class="skill-name" v-if="skill.shortname == 'commandline'">{{ $t('skills.tools.commandLine') }}</span>
         <span class="skill-name" v-else>{{ name }}</span>
 
@@ -89,7 +126,10 @@ import skillsData from '@/assets/json/skillsData.json';
             :aria-valuenow="skill.percentage"
             aria-valuemin="0"
             aria-valuemax="100"
-          >{{ skill.percentage }}%</div>
+            :style="{ 'background-color': `var(--${skill.shortname}-color)` }"
+          >
+            {{ skill.percentage }}%
+          </div>
         </div>
 
       </li>
@@ -131,26 +171,10 @@ import skillsData from '@/assets/json/skillsData.json';
 
 .progress-bar {
   transition: width 0.1s ease;
+  width: 0px;
 }
 
 #skill-english {
   list-style-image: url(@/assets/img/logos/uk_flag.png);
-}
-</style>
-
-<style lang="scss">
-$skills: 'html', 'css', 'bootstrap', 'js', 'vuejs', 'jquery', 'nodejs', 'express', 'sequelize', 'axios', 'php', 'mysql', 'windows', 'linux', 'vscode', 'nano', 'commandline', 'git', 'github', 'wamp', 'paintnet', 'pencil';
-
-@each $skill in $skills {
-
-  #skill-#{$skill} {
-    list-style-image: url(@/assets/img/logos/#{$skill}.png);
-  }
-
-  #skill-#{$skill} .progress-bar {
-    background-color: var(--#{$skill}-color);
-    width: 0px;
-  }
-
 }
 </style>
