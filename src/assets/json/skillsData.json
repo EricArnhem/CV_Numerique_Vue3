@@ -47,6 +47,16 @@
           }
         }
       },
+      "Sequelize": {
+        "shortname": "sequelize",
+        "percentage": 60,
+        "color": "#3b76c3"
+      },
+      "Axios": {
+        "shortname": "axios",
+        "percentage": 70,
+        "color": "#5a29e4"
+      },
       "PHP": {
         "shortname": "php",
         "percentage": 60,
@@ -56,16 +66,6 @@
         "shortname": "mysql",
         "percentage": 60,
         "color": "#4479a1"
-      },
-      "Sequelize": {
-        "shortname": "sequelize",
-        "percentage": 70,
-        "color": "#3b76c3"
-      },
-      "Axios": {
-        "shortname": "axios",
-        "percentage": 70,
-        "color": "#5a29e4"
       }
     }
   ],
