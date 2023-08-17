@@ -15,6 +15,7 @@
             "Axios",
             "Node.js",
             "Express",
+            "Sequelize",
             "MySQL"
           ]
         },
@@ -132,6 +133,7 @@
             "Axios",
             "Node.js",
             "Express",
+            "Sequelize",
             "MySQL"
           ]
         },
