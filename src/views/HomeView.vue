@@ -80,7 +80,7 @@ const currentYear = () => {
 }
 
 /* For xs and sm displays */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
   /* Removes the horizontal padding on the container and the row */
   #main-container,
@@ -97,7 +97,7 @@ const currentYear = () => {
 }
 
 /* For md and + displays */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   /* Adds a full border on divs with ID starting with 'block-' */
   div[id^="block-"] {

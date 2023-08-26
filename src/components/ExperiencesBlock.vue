@@ -96,7 +96,7 @@ const getTechnologyColor = (technology) => {
 }
 
 /* Reduces the width of the date so it can wrap */
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .experience-event::before {
     left: -127px;
     width: 77px;

@@ -69,7 +69,7 @@ useI18n();
 }
 
 /* Reduces the width of the date so it can wrap */
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .training-event::before {
     left: -127px;
     width: 77px;
