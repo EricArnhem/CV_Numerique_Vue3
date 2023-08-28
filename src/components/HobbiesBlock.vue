@@ -22,6 +22,12 @@ useI18n();
           {{ $t('hobbies.astronomy') }}
         </li>
         <li class="faa-parent animated-hover">
+          <span class="hobby-icon-container faa-flash">
+            <font-awesome-icon :icon="['fas', 'camera-retro']" size="2x" class="hobby-icon" />
+          </span>
+          {{ $t('hobbies.photography') }}
+        </li>
+        <li class="faa-parent animated-hover">
           <span class="hobby-icon-container faa-wrench faa-slow">
             <font-awesome-icon :icon="['fas', 'gamepad']" size="2x" class="hobby-icon" />
           </span>

@@ -41,11 +41,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 // Hobbies
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons'
 import { faDisplay } from '@fortawesome/free-solid-svg-icons'
 
 // add icons to the library
-library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faChevronRight, faGithub, faMicrochip, faRocket, faGamepad, faDisplay)
+library.add(faLanguage, faLocationDot, faEnvelope, faFilePdf, faChevronRight, faGithub, faMicrochip, faRocket, faCameraRetro, faGamepad, faDisplay)
 
 const app = createApp(App)
 
