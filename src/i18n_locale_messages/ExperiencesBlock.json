@@ -6,7 +6,7 @@
       "events": {
         "starshipGame": {
           "date": "2022-2023",
-          "title": "Développement d'un mini jeu dans lequel on peut créer un vaisseau spatial, choisir sa classe et contrôler certaines de ses actions via des boutons sur un tableau de bord",
+          "title": "Développement d'un mini jeu dédié à la création d'un vaisseau spatial",
           "technologies": [
             "HTML",
             "CSS",
@@ -124,7 +124,7 @@
       "events": {
         "starshipGame": {
           "date": "2022-2023",
-          "title": "Development of a minigame in which we can create a starship, choose its class and control some of its actions via buttons on a dashboard",
+          "title": "Development of a mini game dedicated to the creation of a starship",
           "technologies": [
             "HTML",
             "CSS",
