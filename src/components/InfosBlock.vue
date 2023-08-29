@@ -27,12 +27,6 @@ useI18n();
           <font-awesome-icon :icon="['fab', 'github']" /> GitHub
         </a>
       </li>
-      <!-- REMOVED UNTIL NEW CV PDF IS DONE -->
-      <!-- <li v-show="$i18n.locale === 'fr'">
-        <a href="/CV_ARNHEM_Eric.pdf">
-          <font-awesome-icon :icon="['fas', 'file-pdf']" /> CV PDF
-        </a>
-      </li> -->
     </ul>
   </div>
 </template>
