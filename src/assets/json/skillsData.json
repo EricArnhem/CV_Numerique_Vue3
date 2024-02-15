@@ -120,10 +120,10 @@
         "percentage": 80,
         "color": "#7293c4"
       },
-      "Pencil": {
-        "shortname": "pencil",
-        "percentage": 70,
-        "color": "#f18d00"
+      "Figma": {
+        "shortname": "figma",
+        "percentage": 40,
+        "color": "#a259ff"
       }
     }
   ]
