@@ -18,6 +18,6 @@ git add -A
 git commit -m 'Deploy to GitHub Pages'
 
 # Push to the specified remote repository and branch
-git push $REMOTE_REPO_URL $DEPLOY_BRANCH
+git push -f $REMOTE_REPO_URL $DEPLOY_BRANCH
 
 cd -
